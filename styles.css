@@ -1,0 +1,69 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background: url(images/fondo.jpg) no-repeat;
+}
+/* SECCION SUPERIOR */
+.superior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.superior h1 {
+    margin: .5em;
+    font-family: 'Permanent Marker', cursive;
+    font-size: xx-large;
+    text-align: center;
+}
+.superior #gameContainer{
+    display: flex;
+    align-items: center;
+}
+.superior .opcion {
+    margin: .5em 2em;
+    font-size: large;
+
+}
+.instruccion {
+    padding: auto;
+}
+
+/* SECCION ELECCIONES */
+.elecciones {
+    display: flex;
+    justify-content: space-around;
+}
+.elecciones #eleccionU {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.elecciones #eleccionPC {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.elecciones .imagen img {
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+    border: 3px solid darkslategrey;
+    justify-self: space-around ;
+}
+
+/* SECCION SCORES */
+.scores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1em;
+}
+.scores #resultado {
+    font-family: 'Permanent Marker', cursive;
+    font-size: x-large;
+}
+.scores #historial p {
+    display: inline;
+    margin: 0 .5em;
+}
+.scores button {
+    margin-bottom: .5em;
+}

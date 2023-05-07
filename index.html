@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ETIQUETAS META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Piedra, papel o tijera</title>
+</head>
+<body>
+    <section class="superior">
+        <h1>PIEDRA, PAPEL O TIJERA</h1>
+        <p class="instruccion">Elige una opcion para jugar contra la PC</p>
+        <div id="gameContainer">
+            <button onclick="eleccion('piedra')" name="piedra" class="opcion btn btn-dark">Piedra</button>
+            <button onclick="eleccion('papel')" name="papel" class="opcion btn btn-dark">Papel</button>
+            <button onclick="eleccion('tijera')" name="tijera" class="opcion btn btn-dark">Tijera</button>
+        </div>
+    </section>
+
+    <section class="elecciones">
+        <div class="usuario">
+            <p id="eleccionU"></p>
+            <p id="imagenU" class="imagen"></p>   
+        </div>
+        <div class="PC">
+            <p id="eleccionPC"></p>
+            <p id="imagenPC" class="imagen"></p>   
+        </div>
+    </section>
+    
+    <section class="scores">
+        <p id="resultado"></p>
+        <p id="historial"></p>
+        <button id="limpiarHistorial" onclick="limpiarHistorial()" class="btn btn-secondary">Limpiar historial</button>
+    </section>
+
+
+    <script src="archivo.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
