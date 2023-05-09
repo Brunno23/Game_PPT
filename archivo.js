@@ -8,9 +8,9 @@ const posibles = ["piedra", "papel", "tijera"];
 let victorias = [];
 let derrotas = [];
 let empates = [];
-let victoriasT = [];
-let derrotasT = [];
-let empatesT = [];
+let victoriasT;
+let derrotasT;
+let empatesT;
 
 //  FUNCION QUE SE EJECUTA CADA VEZ QUE EL USUARIO ELIGE UNA OPCION
 function eleccion(opcion) {
